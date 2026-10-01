@@ -1,0 +1,235 @@
+{
+  "match_summary": {
+    "total_annotation_rows": 121,
+    "unmatched_rows": 0,
+    "unmatched_pct": 0.0,
+    "rows_dropped_for_nan_inf": 0
+  },
+  "metrics": {
+    "overall": {
+      "n": 121,
+      "pearson_r": 0.7670297008325585,
+      "pearson_p": 1.0999107955405647e-24,
+      "pearson_ci": [
+        0.6896277710569325,
+        0.8309678186206965
+      ],
+      "pearson_significant": true,
+      "spearman_rho": 0.7738005809262491,
+      "spearman_p": 2.367720296385075e-25,
+      "spearman_ci": [
+        0.6873261101301815,
+        0.8378051615142952
+      ],
+      "spearman_significant": true,
+      "mae": 11.793801652892563,
+      "rmse": 15.252313874045365,
+      "r2": 0.5547610067281336,
+      "mean_error": 0.8219008264462806,
+      "strength": "Strong"
+    },
+    "en": {
+      "n": 43,
+      "pearson_r": 0.8202486874255236,
+      "pearson_p": 1.6889844384348237e-11,
+      "pearson_ci": [
+        0.6975043889485917,
+        0.8962908454167337
+      ],
+      "pearson_significant": true,
+      "spearman_rho": 0.8053466709005397,
+      "spearman_p": 7.429504343901036e-11,
+      "spearman_ci": [
+        0.6272782320088128,
+        0.9016985730371382
+      ],
+      "spearman_significant": true,
+      "mae": 9.938953488372093,
+      "rmse": 12.12057939074869,
+      "r2": 0.6633688616504738,
+      "mean_error": 1.2191860465116278,
+      "strength": "Strong"
+    },
+    "ru": {
+      "n": 40,
+      "pearson_r": 0.7773580118521485,
+      "pearson_p": 3.647324388255929e-09,
+      "pearson_ci": [
+        0.6537911325626433,
+        0.8707308348284448
+      ],
+      "pearson_significant": true,
+      "spearman_rho": 0.7883133259843453,
+      "spearman_p": 1.551339222063692e-09,
+      "spearman_ci": [
+        0.6364946589507415,
+        0.8784726423345004
+      ],
+      "spearman_significant": true,
+      "mae": 12.706875,
+      "rmse": 16.208662325281505,
+      "r2": 0.5804660633395959,
+      "mean_error": -2.6618750000000007,
+      "strength": "Strong"
+    },
+    "kk": {
+      "n": 38,
+      "pearson_r": 0.7088611684547442,
+      "pearson_p": 6.339348069537654e-07,
+      "pearson_ci": [
+        0.5180793347137834,
+        0.8470051320451107
+      ],
+      "pearson_significant": true,
+      "spearman_rho": 0.7271436560313106,
+      "spearman_p": 2.3345455723250343e-07,
+      "spearman_ci": [
+        0.5183590438276392,
+        0.855149163266997
+      ],
+      "spearman_significant": true,
+      "mae": 12.93157894736842,
+      "rmse": 17.261693214501843,
+      "r2": 0.34607383709332684,
+      "mean_error": 4.039473684210527,
+      "strength": "Strong"
+    }
+  },
+  "insights": {
+    "en": {
+      "n": 43,
+      "recommendation": "Strong alignment -- no tuning needed.",
+      "top_errors": [
+        {
+          "sentence_id": "en_023",
+          "sentence_text": "Although there are a wide range of fast Fourier transform algorithms, involving a wealth of mathematics from number theory to polynomial algebras, the vast majority of FFT implementations in practice employ some variation on the Cooley–Tukey algorithm.",
+          "human_scaled": 23.75,
+          "readability_score": 56.1,
+          "error": -32.35
+        },
+        {
+          "sentence_id": "en_004",
+          "sentence_text": "Trump has repeatedly promoted the project as a way to expand US energy exports and strengthen ties with allies including South Korea and Japan.",
+          "human_scaled": 68.75,
+          "readability_score": 43.1,
+          "error": 25.65
+        },
+        {
+          "sentence_id": "en_013",
+          "sentence_text": "Present-day climate change includes both global warming—the ongoing increase in global average temperature—and its wider effects on Earth's climate system.",
+          "human_scaled": 62.5,
+          "readability_score": 41.9,
+          "error": 20.6
+        }
+      ],
+      "feature_ranges": {
+        "tree_depth": {
+          "mean": 7.209302325581396,
+          "std": 2.6637806629351357
+        },
+        "char_density": {
+          "mean": 5.1455186890348905,
+          "std": 1.0883505819014858
+        },
+        "avg_syllables": {
+          "mean": 1.848354240012944,
+          "std": 0.42085921529666453
+        },
+        "pos_ratio": {
+          "mean": 0.4978115417305615,
+          "std": 0.12470952241134406
+        }
+      }
+    },
+    "ru": {
+      "n": 40,
+      "recommendation": "Strong alignment -- no tuning needed.",
+      "top_errors": [
+        {
+          "sentence_id": "ru_001",
+          "sentence_text": "Быстрая коричневая лиса прыгает через ленивую собаку.",
+          "human_scaled": 100.0,
+          "readability_score": 65.4,
+          "error": 34.599999999999994
+        },
+        {
+          "sentence_id": "ru_018",
+          "sentence_text": "Андрей Ефимыч чрезвычайно любит ум и честность, но чтобы устроить около себя жизнь умную и честную, у него не хватает характера и веры в свое право.",
+          "human_scaled": 67.5,
+          "readability_score": 98.3,
+          "error": -30.799999999999997
+        },
+        {
+          "sentence_id": "ru_020",
+          "sentence_text": "Одним из загадочных объектов топологии является лента Мёбиуса - неориентированная поверхность с одной стороной.",
+          "human_scaled": 42.50000000000001,
+          "readability_score": 68.9,
+          "error": -26.4
+        }
+      ],
+      "feature_ranges": {
+        "tree_depth": {
+          "mean": 5.525,
+          "std": 2.4185481181899195
+        },
+        "char_density": {
+          "mean": 6.397329101497058,
+          "std": 1.389854232975787
+        },
+        "avg_syllables": {
+          "mean": 2.829815392510826,
+          "std": 0.6502345909020625
+        },
+        "pos_ratio": {
+          "mean": 0.6018841991903584,
+          "std": 0.10259114665925263
+        }
+      }
+    },
+    "kk": {
+      "n": 38,
+      "recommendation": "Strong alignment -- no tuning needed. Algorithm shows a systematic bias: it consistently under-rates (predicts harder than humans judge) (mean error = 4.0 points).",
+      "top_errors": [
+        {
+          "sentence_id": "kk_001",
+          "sentence_text": "Қалыптасу кезеңі табысты аяқталды.",
+          "human_scaled": 100.0,
+          "readability_score": 51.7,
+          "error": 48.3
+        },
+        {
+          "sentence_id": "kk_008",
+          "sentence_text": "Бұл айтысты есітіп отырған Бекболаттың кімдікі дұрыс, кімдікі теріс екеніне ақылы жете алмады.",
+          "human_scaled": 56.25,
+          "readability_score": 98.7,
+          "error": -42.45
+        },
+        {
+          "sentence_id": "kk_010",
+          "sentence_text": "Бірінші аптада студенттер танысты.",
+          "human_scaled": 100.0,
+          "readability_score": 69.9,
+          "error": 30.099999999999994
+        }
+      ],
+      "feature_ranges": {
+        "tree_depth": {
+          "mean": 4.5,
+          "std": 1.7282482765109757
+        },
+        "char_density": {
+          "mean": 6.784943795648629,
+          "std": 1.182559454077184
+        },
+        "avg_syllables": {
+          "mean": 2.9240025313773197,
+          "std": 0.5124329022358878
+        },
+        "pos_ratio": {
+          "mean": 0.643334713961649,
+          "std": 0.1440694687964534
+        }
+      }
+    }
+  }
+}

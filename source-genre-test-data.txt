@@ -1,0 +1,9 @@
+kk:
+1-4: Learner Corpus of Kazakh - learner(A1 level)
+5-8: UD Kazakh-KTB - fiction
+9-12: UD Kazakh-KTB - news
+13-16: UD Kazakh-KTB - wikipedia.tagged
+17: https://cyberleninka.ru/article/n/aza-stanny-shy-ysynda-y-klimatty-zamanaui-zgeruleri
+18: https://cyberleninka.ru/article/n/aza-stany-akademiyaly-ylymyny-alyptasu-tarihy-zh-ne-s-asfendiarovty-ylymi-yymdastyrushyly-yzmeti
+19: https://cyberleninka.ru/article/n/aldyn-ala-ba-alan-an-zalaldar-zh-ne-olardy-t-ra-syzdy-ayybymen-ara-atynasy
+20: https://cyberleninka.ru/article/n/aza-stanny-shy-ysynda-y-klimatty-zamanaui-zgeruleri

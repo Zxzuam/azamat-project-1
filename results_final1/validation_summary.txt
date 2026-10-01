@@ -1,0 +1,63 @@
+==============================================================================
+READABILITY VALIDATION SUMMARY
+==============================================================================
+Group         n   Pearson r         p  Spearman rho         p      MAE     RMSE       R2  Strength
+--------------------------------------------------------------------------------------------------
+Overall     121       0.767     0.000         0.774     0.000     11.8     15.3    0.555    Strong
+English      43       0.820     0.000         0.805     0.000      9.9     12.1    0.663    Strong
+Russian      40       0.777     0.000         0.788     0.000     12.7     16.2    0.580    Strong
+Kazakh       38       0.709     0.000         0.727     0.000     12.9     17.3    0.346    Strong
+
+95% confidence intervals (bootstrap, n=2000 resamples):
+  Overall    Pearson r CI: [0.690, 0.831]   Spearman rho CI: [0.687, 0.838]
+  English    Pearson r CI: [0.698, 0.896]   Spearman rho CI: [0.627, 0.902]
+  Russian    Pearson r CI: [0.654, 0.871]   Spearman rho CI: [0.636, 0.878]
+  Kazakh     Pearson r CI: [0.518, 0.847]   Spearman rho CI: [0.518, 0.855]
+
+Outlier report: 23 sentence(s) with |error| > 20 points -> results_final1\outliers.csv
+
+Saved figures:
+  results_final1\fig1_scatter_by_language.png
+  results_final1\fig2_distribution_comparison.png
+  results_final1\fig3_residual_plot.png
+
+==============================================================================
+PER-LANGUAGE INSIGHTS
+==============================================================================
+
+-- English (n=43) --
+  Recommendation: Strong alignment -- no tuning needed.
+  Largest mismatches:
+    id=en_023  error=-32.4  human=24  auto=56.1  "Although there are a wide range of fast Fourier transform..."
+    id=en_004  error=+25.6  human=69  auto=43.1  "Trump has repeatedly promoted the project as a way to exp..."
+    id=en_013  error=+20.6  human=62  auto=41.9  "Present-day climate change includes both global warming—t..."
+  Feature ranges (mean +/- std):
+    tree_depth: 7.21 +/- 2.66
+    char_density: 5.15 +/- 1.09
+    avg_syllables: 1.85 +/- 0.42
+    pos_ratio: 0.50 +/- 0.12
+
+-- Russian (n=40) --
+  Recommendation: Strong alignment -- no tuning needed.
+  Largest mismatches:
+    id=ru_001  error=+34.6  human=100  auto=65.4  "Быстрая коричневая лиса прыгает через ленивую собаку."
+    id=ru_018  error=-30.8  human=68  auto=98.3  "Андрей Ефимыч чрезвычайно любит ум и честность, но чтобы ..."
+    id=ru_020  error=-26.4  human=43  auto=68.9  "Одним из загадочных объектов топологии является лента Мёб..."
+  Feature ranges (mean +/- std):
+    tree_depth: 5.53 +/- 2.42
+    char_density: 6.40 +/- 1.39
+    avg_syllables: 2.83 +/- 0.65
+    pos_ratio: 0.60 +/- 0.10
+
+-- Kazakh (n=38) --
+  Recommendation: Strong alignment -- no tuning needed. Algorithm shows a systematic bias: it consistently under-rates (predicts harder than humans judge) (mean error = 4.0 points).
+  Largest mismatches:
+    id=kk_001  error=+48.3  human=100  auto=51.7  "Қалыптасу кезеңі табысты аяқталды."
+    id=kk_008  error=-42.5  human=56  auto=98.7  "Бұл айтысты есітіп отырған Бекболаттың кімдікі дұрыс, кім..."
+    id=kk_010  error=+30.1  human=100  auto=69.9  "Бірінші аптада студенттер танысты."
+  Feature ranges (mean +/- std):
+    tree_depth: 4.50 +/- 1.73
+    char_density: 6.78 +/- 1.18
+    avg_syllables: 2.92 +/- 0.51
+    pos_ratio: 0.64 +/- 0.14
+
